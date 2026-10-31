@@ -1,0 +1,24 @@
+[
+
+    {
+        "Email": "Admin",
+         "Password" : "admin123",
+         "FirstName" : "Nikhil",
+         "MiddleName" : "Nayaka",
+         "LastName" : "H",
+         "EMPName"  : "Nikhil Nayaka H"
+
+    },
+
+    {
+     
+        "Email": "Admin",
+        "Password" : "Admin"
+
+    }
+
+
+
+
+
+]
