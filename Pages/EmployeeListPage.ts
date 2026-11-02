@@ -13,7 +13,7 @@ export class EmployeeListPage{
 
      this.page=page;
      this.EmployeeListMenu = page.getByRole('link', {name :"Employee List"});
-     this.EmployeeNameSearch= page.locator('//input[@placeholder="Type for hints..."][1]');
+     this.EmployeeNameSearch =page.getByPlaceholder('Type for hints...').first();
      this.EmpSearchBTn = page.getByRole('button' , {name: "search"});}
 
 
@@ -26,7 +26,7 @@ export class EmployeeListPage{
      }
 
      async SearchEmployee(EmpName: string){
-        await this.page.pause();
+        //await this.page.pause();
         await this.EmployeeNameSearch.fill(EmpName);
         await this.EmpSearchBTn.click();
      }
